@@ -1,18 +1,11 @@
+{% extends "base.html" %}
+{% block title %}首頁{% endblock %}
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>讀書計畫</title>
-</head>
-<body>
-    <h1>廖姿婷的讀書計畫</h1>
-    <ul>
-        <li><a href="/competition">競賽經驗</a></li>
-        <li><a href="/activities">課外活動</a></li>
-        <li><a href="/leadership">幹部經驗</a></li>
-        <li><a href="/club">社團經驗</a></li>
-        <li><a href="/electives">多元選修課程</a></li>
-        <li><a href="/ai">AI應用</a></li>
-    </ul>
-</body>
-</html>
+{% block content %}
+<div class="text-center">
+    <h1 class="fw-bold mb-4">廖姿婷的讀書計畫</h1>
+    <p class="lead">這裡記錄了我的競賽經驗、課外活動、幹部經驗、社團參與與 AI 應用。</p>
+    <a href="/competition" class="btn btn-primary btn-lg mt-3">開始探索</a>
+</div>
+{% endblock %}
+
