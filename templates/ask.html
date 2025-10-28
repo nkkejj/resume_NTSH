@@ -1,20 +1,75 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
     <title>問答系統</title>
+    <style>
+        body {
+            font-family: "Microsoft JhengHei", sans-serif;
+            background: #f9fafc;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+            margin: 0;
+            padding-top: 50px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #0078d4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #005fa3;
+        }
+
+        .answer-box {
+            margin-top: 30px;
+            padding: 15px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            width: 400px;
+            text-align: left;
+        }
+
+        .question, .answer {
+            margin: 10px 0;
+        }
+
+        .question strong {
+            color: #444;
+        }
+
+        .answer strong {
+            color: #0078d4;
+        }
+    </style>
 </head>
 <body>
-    <h1>問答機器人</h1>
+    <h1>💬 小型問答系統</h1>
     <form method="POST">
-        <label>請輸入你的問題：</label><br>
-        <input type="text" name="question" required>
-        <button type="submit">送出</button>
-    </form>
-
-    {% if question %}
-        <h2>你問的是：{{ question }}</h2>
-        <p>回答：{{ answer }}</p>
-    {% endif %}
-</body>
-</html>
+        <input type="text" name="questi
